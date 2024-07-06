@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+        
+        <div class="infomation_div">
+            <div class="header">
+                <label>INFORMATION</label>
+            </div>
+            <div class="text">
+                <label>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia, enim officiis sequi, possimus quae veniam vero ipsum sunt omnis distinctio esse unde. Natus unde animi provident necessitatibus cupiditate modi veritatis iusto eaque, praesentium voluptates aliquam voluptatum ut incidunt, laudantium in.
+                </label>
+            </div>
+            <div class="text">
+                <label>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam molestiae, est itaque iure mollitia culpa beatae architecto dolore libero, facilis omnis autem nulla. Dolorem animi odit, cupiditate impedit doloribus ab officia quas iusto modi expedita?
+                </label>
+            </div>
+        </div>
+        
+        <div class="register_div">
+            <div class="header register">
+                <label>REGISTER FORM</label>
+            </div>
+            <div class="form_div">
+                 
+                <div class="firstname_form">
+                    <label>First Name</label>   
+                    <input type="text" name="firstname" class="form">
+                </div>
+
+                <div class="lastname_form">
+                    <label>Last Name</label>   
+                    <input type="text" name="lastname" class="form">
+                </div>
+                
+                <div class="gender_form">
+                    <label>Gender</label>
+                    <div class="radio_group">
+                        <input type="radio" name="gender" value="Male">Male
+                        <input type="radio" name="gender" value="Female">Female
+                        <input type="radio" name="gender" value="Other">Other
+                    </div>
+                </div>
+
+                <div class="email_form">
+                    <label>Your Email</label>
+                    <input type="text" name="email" class="form">
+                </div>
+
+                <div class="description_form">
+                    <label>Self Description</label>
+                    <textarea class="form" name="description"></textarea>
+                </div>
+
+            </div>
+
+            <div class="message" id="message">
+                test
+            </div>
+            
+            <div class="button">
+                <button onclick="submitData()">Register</button>
+            </div>
+
+        </div>
+
+    </div>
+
+<script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+<script src="main,.js"></script>
+</body>
+</html>

@@ -1,0 +1,145 @@
+
+html {
+    font-family: 'Poppins';
+    font-size: 17px;
+}
+
+
+body {
+    background-color: #80deea;
+}
+
+.main {
+    background-color: white;
+    width: 1000px;
+    height: 70vh;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 100px;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    overflow: hidden;
+    display: flex;
+}
+
+.infomation_div {
+    background-color: #0288d1;
+    width: 100%;
+    color: white;
+}
+
+.header {
+    margin-top: 50px;
+    font-size: 35px;
+    font-weight: 600;
+    padding-left: 40px;
+}
+
+.register_div {
+    background-color: white;
+    width: 100%;
+}
+
+.text {
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 40px;
+
+}
+
+.header.register {
+    color: #0288d1;
+}
+
+
+.firstname_form {grid-area: firstname;}
+.lastname_form {grid-area: lastname;}
+.email_form {grid-area: email;}
+.gender_form {grid-area: gender;}
+.description_form {grid-area: description;}
+
+.form_div {
+    display: grid;
+    grid-template-areas: 
+    'firstname firstname lastname lastname'
+    'email email email email'
+    'gender gender gender gender'
+    'description description description description';
+    gap: 10px;
+    padding: 20px;
+}
+
+.form {
+    font-size: 17px;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    color: gray;
+    height: 30px;
+}
+
+.form_div > div {
+    padding-top: 20px;
+}
+
+.email_form {
+    display: grid;
+    grid-column: 1fr;
+}
+
+.gender_form {
+    display: flex;
+    flex-direction: column;
+}
+
+.radio_group {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.description_form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.button {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.button button {
+    background-color: #0288d1;
+    border: 0;
+    border-radius: 5px;
+    color: white;
+    width: 6rem;
+    height: 2.5rem;
+}
+
+.button button:hover {
+    background-color: gray;
+}
+
+.message {
+    background-color: red;
+    margin: 10px;
+    display: none;
+}
+
+.message.success {
+    background-color: lightgreen;
+    font-size: 17px;
+    display: block;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.message.danger {
+    background-color: red;
+    color:white;
+    font-size: 17px;
+    display: block;
+    border-radius: 5px;
+    text-align: center;
+}
